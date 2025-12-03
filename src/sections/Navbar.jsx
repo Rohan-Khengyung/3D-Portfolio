@@ -48,3 +48,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+// Hero Section
