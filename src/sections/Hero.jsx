@@ -10,7 +10,7 @@ const Hero = () => {
         <p className='hero_tag text-gray_gradient'>Building Products & Brands</p>
         <div>
             <div className='w-full h-full absolute inset-0'>
-                <Canvas className="w-full h-full">
+                <Canvas className="w-full h-full" >
                     <PerspectiveCamera makeDefault position={[0, 0, 30]} />
                     <HackerRoom />
                 </Canvas>
