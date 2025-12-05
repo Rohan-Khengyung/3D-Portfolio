@@ -33,9 +33,9 @@ const Hero = () => {
                     rotation={[0, -Math.PI, 0]} 
                     scale={sizes.deskScale} />
 
-                    <group>
+                    {/* <group>
                       <Target position={sizes.targetPosition} />
-                    </group>
+                    </group> */}
 
                     <ambientLight intensity={1} />
                     <directionalLight position={[10, 10 ,10]} intensity={0.5} />
