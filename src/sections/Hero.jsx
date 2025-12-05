@@ -34,7 +34,7 @@ const Hero = () => {
                     scale={sizes.deskScale} />
 
                     <group>
-                      <Target  />
+                      <Target position={sizes.targetPosition} />
                     </group>
 
                     <ambientLight intensity={1} />
