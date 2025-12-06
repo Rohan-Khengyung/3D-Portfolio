@@ -6,6 +6,10 @@ import CanvasLoader from "../components/CanvasLoader";
 import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
+import Target from '../components/Target.jsx';
+import ReactLogo from "../components/ReactLogo.jsx"; 
+import Cube from '../components/Cube.jsx';
+import Rings from '../components/Rings.jsx';
 
 
 const Hero = () => {
@@ -34,7 +38,10 @@ const Hero = () => {
                     scale={sizes.deskScale} />
 
                     <group>
-                      <Target position={sizes.targetPosition} />
+                      {/* <Target position={sizes.targetPosition} /> */}
+                      <ReactLogo position={sizes.reactLogoPosition} />
+                      <Cube position={sizes.cubePosition} />
+                      <Rings position={sizes.ringPosition} />
                     </group>
 
                     <ambientLight intensity={1} />
