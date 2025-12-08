@@ -11,7 +11,7 @@ import {Float, useGLTF } from '@react-three/drei'
 const DroneBot = (props) =>  {
   const { nodes, materials } = useGLTF('models/dronebot.glb')
   return (
-    <Float floatIntensity={7}>
+    <Float floatIntensity={8}>
        <group {...props} dispose={null}>
       <mesh
         castShadow
