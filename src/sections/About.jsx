@@ -56,9 +56,9 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
+                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 27.6666, lng: 85.3167, text: 'Lalitpur, Nepal',  color: 'white', size: 15 }]}
+                labelsData={[{ lat: 27.6666, lng: 85.3167, text: 'Lalitpur, Nepal',  color: 'white', size: 17 }]}
               />
             </div>
             <div>
