@@ -29,6 +29,7 @@ const Projects = () => {
 
   const currentProject = myProjects[selectedProjectIndex];
 
+  // Update Later
   return (
     <section className="c-space my-20">
       {/* <p className="head-text">My Selected Work</p>

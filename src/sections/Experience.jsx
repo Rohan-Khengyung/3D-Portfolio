@@ -9,6 +9,7 @@ import { workExperiences } from '../constants/index.js';
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
 
+  // Update Later
   return (
     <section className="c-space my-20" id="work">
       {/* <div className="w-full text-white-600">
