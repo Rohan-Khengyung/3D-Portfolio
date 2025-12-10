@@ -13,7 +13,6 @@ const NavItems = ({ onClick = () => {} }) => (
     ))}
   </ul>
 );
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
