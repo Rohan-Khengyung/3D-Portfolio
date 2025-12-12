@@ -61,6 +61,7 @@ const About = () => {
                 labelsData={[{ lat: 27.6666, lng: 85.3167, text: 'Lalitpur, Nepal',  color: 'white', size: 17 }]}
               />
             </div>
+            
             <div>
               <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
               <p className="grid-subtext">I&apos;m based in Lalitpur, Nepal and open to remote work worldwide.</p>
