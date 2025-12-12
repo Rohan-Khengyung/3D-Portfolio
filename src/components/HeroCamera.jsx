@@ -12,7 +12,6 @@ const HeroCamera = ({ isMobile, children }) => {
       easing.dampE(group.current.rotation, [-state.pointer.y / 3, state.pointer.x / 5, 0], 0.25, delta);
     }
   });
-
   return <group ref={group}>{children}</group>;
 };
 
