@@ -19,7 +19,7 @@ const DroneBot = (props) =>  {
     if (groupRef.current) {
       // Create a gentle hover effect using sine wave
       // Adjust the 0.5 value for speed and 0.1 for height range
-      const hoverOffset = Math.sin(state.clock.elapsedTime * 1.3) * 1.5
+      const hoverOffset = Math.sin(state.clock.elapsedTime * 1.5) * 0.8
       groupRef.current.position.y = 8 + hoverOffset
     }
   })
