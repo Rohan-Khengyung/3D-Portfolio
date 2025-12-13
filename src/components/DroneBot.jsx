@@ -6,13 +6,13 @@ Source: https://sketchfab.com/3d-models/drone-robot-177e6cce2ef44a679238552a5bf6
 Title: drone robot
 */
 
-import {Float, useGLTF } from '@react-three/drei'
+import React, { useRef } from 'react'
+import { useGLTF } from '@react-three/drei'
 
 const DroneBot = (props) =>  {
-  const { nodes, materials } = useGLTF('models/dronebot.glb')
+  const { nodes, materials } = useGLTF('models/robothover.glb')
   return (
-    <Float floatIntensity={8}>
-       <group {...props} dispose={null}>
+    <group {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
@@ -56,10 +56,9 @@ const DroneBot = (props) =>  {
         material={materials.lambert2}
       />
     </group>
-    </Float>
   )
 }
 
-useGLTF.preload('/scene.gltf');
+useGLTF.preload('models/robothover.glb');
 
 export default DroneBot;
