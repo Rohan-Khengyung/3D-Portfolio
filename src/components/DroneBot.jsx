@@ -5,7 +5,6 @@ License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 Source: https://sketchfab.com/3d-models/drone-robot-177e6cce2ef44a679238552a5bf6c956
 Title: drone robot
 */
-
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
