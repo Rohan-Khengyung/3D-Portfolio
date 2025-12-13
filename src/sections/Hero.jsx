@@ -3,9 +3,6 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
-import Cube from '../components/Cube.jsx';
-import Rings from '../components/Rings.jsx';
-import ReactLogo from '../components/ReactLogo.jsx';
 import DroneBot from '../components/DroneBot.jsx';
 import Button from '../components/Button.jsx';
 import CanvasLoader from '../components/Loading.jsx';
@@ -44,12 +41,8 @@ const Hero = () => {
             </HeroCamera>
 
             <group>
-             
               <DroneBot position={sizes.dronePosition} />
-              <RobotHover position={sizes.cubePosition} />
-              {/* <ReactLogo position={sizes.reactLogoPosition} />
-              <Rings position={sizes.ringPosition} />
-              <Cube position={sizes.cubePosition} /> */}
+              <RobotHover position={sizes.robotPosition} />
             </group>
 
             <ambientLight intensity={1} />

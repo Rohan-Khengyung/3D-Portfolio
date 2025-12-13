@@ -8,53 +8,72 @@ Title: drone robot
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 const DroneBot = (props) =>  {
   const { nodes, materials } = useGLTF('models/robothover.glb')
+  const groupRef = useRef()
+  
+  // Use useFrame to create animation
+  useFrame((state) => {
+    if (groupRef.current) {
+      // Create a gentle hover effect using sine wave
+      // Adjust the 0.5 value for speed and 0.1 for height range
+      const hoverOffset = Math.sin(state.clock.elapsedTime * 1.3) * 1.5
+      groupRef.current.position.y = 8 + hoverOffset
+    }
+  })
+  
   return (
     <group {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pSphere1_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pCylinder1_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pCube1_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pCone3_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pCube3_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pCone4_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.pCone5_lambert2_0.geometry}
-        material={materials.lambert2}
-      />
+      <group 
+        ref={groupRef} 
+        position={[1, 8, -2]} 
+        rotation={[0, 0.5, 0]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pSphere1_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pCylinder1_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pCube1_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pCone3_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pCube3_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pCone4_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.pCone5_lambert2_0.geometry}
+          material={materials.lambert2}
+        />
+      </group>
     </group>
   )
 }

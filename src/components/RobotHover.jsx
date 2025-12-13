@@ -19,7 +19,7 @@ const HoverRobot = (props) => {
     if (groupRef.current) {
       // Calculate hover motion: up and down over time
       // Using sine wave for smooth up and down motion
-      const hoverAmount = Math.sin(state.clock.elapsedTime) * 0.2
+      const hoverAmount = Math.sin(state.clock.elapsedTime) * 0.3
       
       // Apply the hover animation to the main group
       groupRef.current.position.y = 6 + hoverAmount
