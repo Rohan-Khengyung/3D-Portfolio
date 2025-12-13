@@ -258,7 +258,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   };
 };
 
-// Update Later
+// Update Later //
 export const workExperiences = [
   {
     id: 1,
