@@ -253,8 +253,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    robotPosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 1] : [7, -5, 1],
-    dronePosition: isSmall ? [-9, -12, -14] : isMobile ? [-11, -12, -12] : isTablet ? [-14, -13, -10] : [-15, -13, -8],
+    robotPosition: isSmall ? [4, -5, 0] : isMobile ? [5.5, -5, 0] : isTablet ? [6, -5, 1] : [7, -5, 1],
+    dronePosition: isSmall ? [-3.8, -12, 4.4] : isMobile ? [-4, -12.5, 6] : isTablet ? [-5, -13, 7] : [-6, -13.5, 8],
   };
 };
 
