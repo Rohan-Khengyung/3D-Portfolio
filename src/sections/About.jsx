@@ -99,6 +99,7 @@ const About = () => {
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">rairohan98015@gmail.com</p>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
